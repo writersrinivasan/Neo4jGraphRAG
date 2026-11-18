@@ -1,0 +1,12 @@
+langgraph>=1.2
+langchain-groq>=1.2
+langchain-core>=1.8
+networkx>=3.4
+scipy
+numpy
+fastapi
+uvicorn[standard]
+neo4j>=6.0
+python-dotenv
+fastembed>=0.9
+certifi

@@ -1,0 +1,1576 @@
+{
+ "generatedAt": "2026-11-18 11:05",
+ "runtimeSec": 8.5,
+ "dataset": {
+  "members": 20000,
+  "providers": 1500,
+  "claims": 142134,
+  "diagnoses": 12,
+  "referralEdges": 3758,
+  "graphNodes": 54671,
+  "graphEdges": 113269,
+  "plantedRings": 6,
+  "sqlTables": 5
+ },
+ "benchmark": [
+  {
+   "hops": 1,
+   "sqlMs": 0.17,
+   "graphMs": 0.05,
+   "reached": 36
+  },
+  {
+   "hops": 2,
+   "sqlMs": 2.72,
+   "graphMs": 0.64,
+   "reached": 65
+  },
+  {
+   "hops": 3,
+   "sqlMs": 10.88,
+   "graphMs": 2.03,
+   "reached": 385
+  },
+  {
+   "hops": 4,
+   "sqlMs": 58.78,
+   "graphMs": 13.6,
+   "reached": 1416
+  }
+ ],
+ "fraud": {
+  "providerPairsScanned": 27882,
+  "threshold": 8,
+  "candidateRings": 6,
+  "precision": 1.0,
+  "recall": 1.0,
+  "louvainCommunities": 30,
+  "sqlPairJoinMs": 95.6,
+  "sqlPairRows": 61,
+  "ringExposureUSD": 3394352,
+  "rings": [
+   {
+    "providers": [
+     "P00227",
+     "P00917",
+     "P01127",
+     "P01337",
+     "P01397"
+    ],
+    "coreMembers": 30,
+    "sharedPhoneRatio": 1.0,
+    "billingZ": 0.09,
+    "risk": 71,
+    "billedUSD": 584169
+   },
+   {
+    "providers": [
+     "P00100",
+     "P00550",
+     "P00760",
+     "P00970",
+     "P01030"
+    ],
+    "coreMembers": 30,
+    "sharedPhoneRatio": 1.0,
+    "billingZ": -0.2,
+    "risk": 70,
+    "billedUSD": 579161
+   },
+   {
+    "providers": [
+     "P00260",
+     "P00320",
+     "P00620",
+     "P01010",
+     "P01400"
+    ],
+    "coreMembers": 30,
+    "sharedPhoneRatio": 1.0,
+    "billingZ": -0.23,
+    "risk": 70,
+    "billedUSD": 560855
+   },
+   {
+    "providers": [
+     "P00088",
+     "P00388",
+     "P00538",
+     "P00868",
+     "P01348"
+    ],
+    "coreMembers": 30,
+    "sharedPhoneRatio": 1.0,
+    "billingZ": -0.2,
+    "risk": 70,
+    "billedUSD": 565405
+   },
+   {
+    "providers": [
+     "P00076",
+     "P00376",
+     "P00736",
+     "P01186",
+     "P01246"
+    ],
+    "coreMembers": 32,
+    "sharedPhoneRatio": 0.94,
+    "billingZ": -0.23,
+    "risk": 68,
+    "billedUSD": 556114
+   },
+   {
+    "providers": [
+     "P00737",
+     "P00947",
+     "P01037",
+     "P01247",
+     "P01487"
+    ],
+    "coreMembers": 32,
+    "sharedPhoneRatio": 0.94,
+    "billingZ": -0.24,
+    "risk": 68,
+    "billedUSD": 546347
+   }
+  ],
+  "sharedMemberHistogram": [
+   {
+    "shared": 1,
+    "pairs": 15259
+   },
+   {
+    "shared": 2,
+    "pairs": 8016
+   },
+   {
+    "shared": 3,
+    "pairs": 3260
+   },
+   {
+    "shared": 4,
+    "pairs": 988
+   },
+   {
+    "shared": 5,
+    "pairs": 238
+   },
+   {
+    "shared": 6,
+    "pairs": 53
+   },
+   {
+    "shared": 7,
+    "pairs": 7
+   },
+   {
+    "shared": 8,
+    "pairs": 1
+   },
+   {
+    "shared": 30,
+    "pairs": 13
+   },
+   {
+    "shared": 31,
+    "pairs": 18
+   },
+   {
+    "shared": 32,
+    "pairs": 16
+   },
+   {
+    "shared": 33,
+    "pairs": 11
+   },
+   {
+    "shared": 34,
+    "pairs": 1
+   },
+   {
+    "shared": 36,
+    "pairs": 1
+   }
+  ]
+ },
+ "ringViz": {
+  "nodes": [
+   {
+    "id": "P00227",
+    "kind": "Provider",
+    "label": "P00227 \u00b7 Psychiatry",
+    "x": 0.0,
+    "y": -0.32
+   },
+   {
+    "id": "P00917",
+    "kind": "Provider",
+    "label": "P00917 \u00b7 Orthopedics",
+    "x": 0.304,
+    "y": -0.099
+   },
+   {
+    "id": "P01127",
+    "kind": "Provider",
+    "label": "P01127 \u00b7 Nephrology",
+    "x": 0.188,
+    "y": 0.259
+   },
+   {
+    "id": "P01337",
+    "kind": "Provider",
+    "label": "P01337 \u00b7 Primary Care",
+    "x": -0.188,
+    "y": 0.259
+   },
+   {
+    "id": "P01397",
+    "kind": "Provider",
+    "label": "P01397 \u00b7 Cardiology",
+    "x": -0.304,
+    "y": -0.099
+   },
+   {
+    "id": "M004979",
+    "kind": "Member",
+    "label": "M004979",
+    "x": -0.511,
+    "y": 0.046
+   },
+   {
+    "id": "RINGPH2_2",
+    "kind": "Phone",
+    "label": "Shared phone",
+    "x": -0.702,
+    "y": -0.194
+   },
+   {
+    "id": "M000629",
+    "kind": "Member",
+    "label": "M000629",
+    "x": 0.221,
+    "y": 0.106
+   },
+   {
+    "id": "RINGPH2_0",
+    "kind": "Phone",
+    "label": "Shared phone",
+    "x": 0.42,
+    "y": 0.647
+   },
+   {
+    "id": "M004673",
+    "kind": "Member",
+    "label": "M004673",
+    "x": 0.241,
+    "y": -0.317
+   },
+   {
+    "id": "RINGPH2_1",
+    "kind": "Phone",
+    "label": "Shared phone",
+    "x": 0.61,
+    "y": -0.768
+   },
+   {
+    "id": "M011451",
+    "kind": "Member",
+    "label": "M011451",
+    "x": -0.312,
+    "y": 0.094
+   },
+   {
+    "id": "M012097",
+    "kind": "Member",
+    "label": "M012097",
+    "x": 0.138,
+    "y": 0.482
+   },
+   {
+    "id": "M017182",
+    "kind": "Member",
+    "label": "M017182",
+    "x": -0.136,
+    "y": 0.476
+   },
+   {
+    "id": "M001236",
+    "kind": "Member",
+    "label": "M001236",
+    "x": 0.258,
+    "y": -0.475
+   },
+   {
+    "id": "M011079",
+    "kind": "Member",
+    "label": "M011079",
+    "x": 0.403,
+    "y": -0.354
+   },
+   {
+    "id": "M005134",
+    "kind": "Member",
+    "label": "M005134",
+    "x": -0.498,
+    "y": 0.197
+   },
+   {
+    "id": "M003475",
+    "kind": "Member",
+    "label": "M003475",
+    "x": 0.487,
+    "y": -0.217
+   },
+   {
+    "id": "M000070",
+    "kind": "Member",
+    "label": "M000070",
+    "x": -0.186,
+    "y": -0.451
+   },
+   {
+    "id": "M007020",
+    "kind": "Member",
+    "label": "M007020",
+    "x": 0.395,
+    "y": 0.292
+   },
+   {
+    "id": "M005898",
+    "kind": "Member",
+    "label": "M005898",
+    "x": -0.421,
+    "y": -0.284
+   },
+   {
+    "id": "M012992",
+    "kind": "Member",
+    "label": "M012992",
+    "x": -0.474,
+    "y": -0.116
+   },
+   {
+    "id": "M003514",
+    "kind": "Member",
+    "label": "M003514",
+    "x": -0.001,
+    "y": 0.539
+   },
+   {
+    "id": "M018747",
+    "kind": "Member",
+    "label": "M018747",
+    "x": -0.205,
+    "y": -0.263
+   },
+   {
+    "id": "M002287",
+    "kind": "Member",
+    "label": "M002287",
+    "x": 0.104,
+    "y": -0.521
+   },
+   {
+    "id": "M006859",
+    "kind": "Member",
+    "label": "M006859",
+    "x": 0.44,
+    "y": 0.072
+   },
+   {
+    "id": "M009583",
+    "kind": "Member",
+    "label": "M009583",
+    "x": -0.121,
+    "y": -0.057
+   },
+   {
+    "id": "M009983",
+    "kind": "Member",
+    "label": "M009983",
+    "x": -0.39,
+    "y": 0.301
+   },
+   {
+    "id": "M016591",
+    "kind": "Member",
+    "label": "M016591",
+    "x": -0.339,
+    "y": -0.417
+   },
+   {
+    "id": "M018133",
+    "kind": "Member",
+    "label": "M018133",
+    "x": 0.021,
+    "y": 0.317
+   },
+   {
+    "id": "M018978",
+    "kind": "Member",
+    "label": "M018978",
+    "x": 0.289,
+    "y": 0.412
+   },
+   {
+    "id": "M014177",
+    "kind": "Member",
+    "label": "M014177",
+    "x": 0.51,
+    "y": 0.196
+   }
+  ],
+  "edges": [
+   {
+    "s": "P00227",
+    "t": "M004979",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P00227",
+    "t": "M000629",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P00227",
+    "t": "M004673",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P00227",
+    "t": "M011451",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P00227",
+    "t": "M012097",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P00227",
+    "t": "M017182",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P00227",
+    "t": "M001236",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P00227",
+    "t": "M011079",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P00227",
+    "t": "M005134",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P00227",
+    "t": "M003475",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P00227",
+    "t": "M000070",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P00227",
+    "t": "M007020",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P00227",
+    "t": "M005898",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P00227",
+    "t": "M012992",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P00227",
+    "t": "M003514",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P00227",
+    "t": "M018747",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P00227",
+    "t": "M002287",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P00227",
+    "t": "M006859",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P00227",
+    "t": "M009583",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P00227",
+    "t": "M009983",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P00227",
+    "t": "M016591",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P00227",
+    "t": "M018133",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P00227",
+    "t": "M018978",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P00227",
+    "t": "M014177",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P00917",
+    "t": "M004979",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P00917",
+    "t": "M000629",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P00917",
+    "t": "M004673",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P00917",
+    "t": "M011451",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P00917",
+    "t": "M012097",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P00917",
+    "t": "M017182",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P00917",
+    "t": "M001236",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P00917",
+    "t": "M011079",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P00917",
+    "t": "M005134",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P00917",
+    "t": "M003475",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P00917",
+    "t": "M000070",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P00917",
+    "t": "M007020",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P00917",
+    "t": "M005898",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P00917",
+    "t": "M012992",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P00917",
+    "t": "M003514",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P00917",
+    "t": "M018747",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P00917",
+    "t": "M002287",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P00917",
+    "t": "M006859",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P00917",
+    "t": "M009583",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P00917",
+    "t": "M009983",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P00917",
+    "t": "M016591",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P00917",
+    "t": "M018133",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P00917",
+    "t": "M018978",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P00917",
+    "t": "M014177",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01127",
+    "t": "M004979",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01127",
+    "t": "M000629",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01127",
+    "t": "M004673",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01127",
+    "t": "M011451",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01127",
+    "t": "M012097",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01127",
+    "t": "M017182",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01127",
+    "t": "M001236",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01127",
+    "t": "M011079",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01127",
+    "t": "M005134",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01127",
+    "t": "M003475",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01127",
+    "t": "M000070",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01127",
+    "t": "M007020",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01127",
+    "t": "M005898",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01127",
+    "t": "M012992",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01127",
+    "t": "M003514",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01127",
+    "t": "M018747",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01127",
+    "t": "M002287",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01127",
+    "t": "M006859",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01127",
+    "t": "M009583",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01127",
+    "t": "M009983",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01127",
+    "t": "M016591",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01127",
+    "t": "M018133",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01127",
+    "t": "M018978",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01127",
+    "t": "M014177",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01337",
+    "t": "M004979",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01337",
+    "t": "M000629",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01337",
+    "t": "M004673",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01337",
+    "t": "M011451",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01337",
+    "t": "M012097",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01337",
+    "t": "M017182",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01337",
+    "t": "M001236",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01337",
+    "t": "M011079",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01337",
+    "t": "M005134",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01337",
+    "t": "M003475",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01337",
+    "t": "M000070",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01337",
+    "t": "M007020",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01337",
+    "t": "M005898",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01337",
+    "t": "M012992",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01337",
+    "t": "M003514",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01337",
+    "t": "M018747",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01337",
+    "t": "M002287",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01337",
+    "t": "M006859",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01337",
+    "t": "M009583",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01337",
+    "t": "M009983",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01337",
+    "t": "M016591",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01337",
+    "t": "M018133",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01337",
+    "t": "M018978",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01337",
+    "t": "M014177",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01397",
+    "t": "M004979",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01397",
+    "t": "M000629",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01397",
+    "t": "M004673",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01397",
+    "t": "M011451",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01397",
+    "t": "M012097",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01397",
+    "t": "M017182",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01397",
+    "t": "M001236",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01397",
+    "t": "M011079",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01397",
+    "t": "M005134",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01397",
+    "t": "M003475",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01397",
+    "t": "M000070",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01397",
+    "t": "M007020",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01397",
+    "t": "M005898",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01397",
+    "t": "M012992",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01397",
+    "t": "M003514",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01397",
+    "t": "M018747",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01397",
+    "t": "M002287",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01397",
+    "t": "M006859",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01397",
+    "t": "M009583",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01397",
+    "t": "M009983",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01397",
+    "t": "M016591",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01397",
+    "t": "M018133",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01397",
+    "t": "M018978",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "P01397",
+    "t": "M014177",
+    "rel": "TREATED_BY"
+   },
+   {
+    "s": "M004979",
+    "t": "RINGPH2_2",
+    "rel": "HAS_PHONE"
+   },
+   {
+    "s": "RINGPH2_2",
+    "t": "M011451",
+    "rel": "HAS_PHONE"
+   },
+   {
+    "s": "RINGPH2_2",
+    "t": "M005134",
+    "rel": "HAS_PHONE"
+   },
+   {
+    "s": "RINGPH2_2",
+    "t": "M000070",
+    "rel": "HAS_PHONE"
+   },
+   {
+    "s": "RINGPH2_2",
+    "t": "M005898",
+    "rel": "HAS_PHONE"
+   },
+   {
+    "s": "RINGPH2_2",
+    "t": "M012992",
+    "rel": "HAS_PHONE"
+   },
+   {
+    "s": "RINGPH2_2",
+    "t": "M018747",
+    "rel": "HAS_PHONE"
+   },
+   {
+    "s": "RINGPH2_2",
+    "t": "M009583",
+    "rel": "HAS_PHONE"
+   },
+   {
+    "s": "RINGPH2_2",
+    "t": "M009983",
+    "rel": "HAS_PHONE"
+   },
+   {
+    "s": "RINGPH2_2",
+    "t": "M016591",
+    "rel": "HAS_PHONE"
+   },
+   {
+    "s": "M000629",
+    "t": "RINGPH2_0",
+    "rel": "HAS_PHONE"
+   },
+   {
+    "s": "RINGPH2_0",
+    "t": "M012097",
+    "rel": "HAS_PHONE"
+   },
+   {
+    "s": "RINGPH2_0",
+    "t": "M017182",
+    "rel": "HAS_PHONE"
+   },
+   {
+    "s": "RINGPH2_0",
+    "t": "M007020",
+    "rel": "HAS_PHONE"
+   },
+   {
+    "s": "RINGPH2_0",
+    "t": "M003514",
+    "rel": "HAS_PHONE"
+   },
+   {
+    "s": "RINGPH2_0",
+    "t": "M006859",
+    "rel": "HAS_PHONE"
+   },
+   {
+    "s": "RINGPH2_0",
+    "t": "M018133",
+    "rel": "HAS_PHONE"
+   },
+   {
+    "s": "RINGPH2_0",
+    "t": "M018978",
+    "rel": "HAS_PHONE"
+   },
+   {
+    "s": "RINGPH2_0",
+    "t": "M014177",
+    "rel": "HAS_PHONE"
+   },
+   {
+    "s": "M004673",
+    "t": "RINGPH2_1",
+    "rel": "HAS_PHONE"
+   },
+   {
+    "s": "RINGPH2_1",
+    "t": "M001236",
+    "rel": "HAS_PHONE"
+   },
+   {
+    "s": "RINGPH2_1",
+    "t": "M011079",
+    "rel": "HAS_PHONE"
+   },
+   {
+    "s": "RINGPH2_1",
+    "t": "M003475",
+    "rel": "HAS_PHONE"
+   },
+   {
+    "s": "RINGPH2_1",
+    "t": "M002287",
+    "rel": "HAS_PHONE"
+   }
+  ]
+ },
+ "influence": [
+  {
+   "provider": "P01099",
+   "specialty": "Endocrinology",
+   "region": 19,
+   "pagerank": 4.87,
+   "inReferrals": 743
+  },
+  {
+   "provider": "P00979",
+   "specialty": "Cardiology",
+   "region": 19,
+   "pagerank": 4.8,
+   "inReferrals": 752
+  },
+  {
+   "provider": "P00986",
+   "specialty": "Pulmonology",
+   "region": 26,
+   "pagerank": 4.77,
+   "inReferrals": 738
+  },
+  {
+   "provider": "P01371",
+   "specialty": "Cardiology",
+   "region": 21,
+   "pagerank": 4.76,
+   "inReferrals": 707
+  },
+  {
+   "provider": "P00850",
+   "specialty": "Psychiatry",
+   "region": 10,
+   "pagerank": 4.61,
+   "inReferrals": 698
+  },
+  {
+   "provider": "P00086",
+   "specialty": "Durable Medical Equip.",
+   "region": 26,
+   "pagerank": 4.6,
+   "inReferrals": 704
+  },
+  {
+   "provider": "P00994",
+   "specialty": "Durable Medical Equip.",
+   "region": 4,
+   "pagerank": 4.58,
+   "inReferrals": 701
+  },
+  {
+   "provider": "P00006",
+   "specialty": "Psychiatry",
+   "region": 6,
+   "pagerank": 4.57,
+   "inReferrals": 697
+  },
+  {
+   "provider": "P00021",
+   "specialty": "Physical Therapy",
+   "region": 21,
+   "pagerank": 4.55,
+   "inReferrals": 671
+  },
+  {
+   "provider": "P01354",
+   "specialty": "Nephrology",
+   "region": 4,
+   "pagerank": 4.54,
+   "inReferrals": 688
+  }
+ ],
+ "entity": {
+  "buckets": [
+   {
+    "bucket": "1",
+    "clusters": 9988
+   },
+   {
+    "bucket": "2-4 (households)",
+    "clusters": 3321
+   },
+   {
+    "bucket": "5-10",
+    "clusters": 0
+   },
+   {
+    "bucket": "11+",
+    "clusters": 6
+   }
+  ],
+  "suspiciousClusters": 6
+ },
+ "comorbidity": [
+  {
+   "a": "F32 Depression",
+   "b": "F41 Anxiety",
+   "members": 998,
+   "lift": 4.41
+  },
+  {
+   "a": "E11 Type 2 diabetes",
+   "b": "N18 Chronic kidney disease",
+   "members": 328,
+   "lift": 3.78
+  },
+  {
+   "a": "G47 Sleep apnea",
+   "b": "J44 COPD",
+   "members": 208,
+   "lift": 3.74
+  },
+  {
+   "a": "M17 Knee osteoarthritis",
+   "b": "M54 Low back pain",
+   "members": 446,
+   "lift": 2.84
+  },
+  {
+   "a": "J44 COPD",
+   "b": "J45 Asthma",
+   "members": 205,
+   "lift": 2.79
+  },
+  {
+   "a": "E11 Type 2 diabetes",
+   "b": "I10 Hypertension",
+   "members": 1374,
+   "lift": 2.57
+  },
+  {
+   "a": "E11 Type 2 diabetes",
+   "b": "E78 Hyperlipidemia",
+   "members": 1137,
+   "lift": 2.36
+  },
+  {
+   "a": "I10 Hypertension",
+   "b": "I25 Coronary artery disease",
+   "members": 604,
+   "lift": 1.89
+  },
+  {
+   "a": "E78 Hyperlipidemia",
+   "b": "I10 Hypertension",
+   "members": 2368,
+   "lift": 1.88
+  },
+  {
+   "a": "I10 Hypertension",
+   "b": "N18 Chronic kidney disease",
+   "members": 357,
+   "lift": 1.58
+  },
+  {
+   "a": "E78 Hyperlipidemia",
+   "b": "N18 Chronic kidney disease",
+   "members": 301,
+   "lift": 1.48
+  },
+  {
+   "a": "E78 Hyperlipidemia",
+   "b": "I25 Coronary artery disease",
+   "members": 339,
+   "lift": 1.18
+  }
+ ],
+ "spendBySpecialty": [
+  {
+   "specialty": "Orthopedics",
+   "claims": 11930,
+   "spendUSD": 218839045,
+   "denialPct": 8.0
+  },
+  {
+   "specialty": "Radiology",
+   "claims": 9298,
+   "spendUSD": 11183805,
+   "denialPct": 8.2
+  },
+  {
+   "specialty": "Primary Care",
+   "claims": 62467,
+   "spendUSD": 9786535,
+   "denialPct": 7.9
+  },
+  {
+   "specialty": "Durable Medical Equip.",
+   "claims": 7033,
+   "spendUSD": 7733383,
+   "denialPct": 8.4
+  },
+  {
+   "specialty": "Nephrology",
+   "claims": 6422,
+   "spendUSD": 5800349,
+   "denialPct": 8.2
+  },
+  {
+   "specialty": "Cardiology",
+   "claims": 10875,
+   "spendUSD": 4098365,
+   "denialPct": 8.1
+  },
+  {
+   "specialty": "Psychiatry",
+   "claims": 8889,
+   "spendUSD": 1990418,
+   "denialPct": 7.9
+  },
+  {
+   "specialty": "Physical Therapy",
+   "claims": 11166,
+   "spendUSD": 1460547,
+   "denialPct": 7.5
+  },
+  {
+   "specialty": "Pulmonology",
+   "claims": 6601,
+   "spendUSD": 792672,
+   "denialPct": 8.4
+  },
+  {
+   "specialty": "Endocrinology",
+   "claims": 7453,
+   "spendUSD": 187454,
+   "denialPct": 7.5
+  }
+ ],
+ "trend": [
+  {
+   "month": "2024-01",
+   "claims": 4693,
+   "spendUSD": 9083867
+  },
+  {
+   "month": "2024-02",
+   "claims": 4761,
+   "spendUSD": 9291921
+  },
+  {
+   "month": "2024-03",
+   "claims": 4830,
+   "spendUSD": 9251213
+  },
+  {
+   "month": "2024-04",
+   "claims": 4726,
+   "spendUSD": 8514323
+  },
+  {
+   "month": "2024-05",
+   "claims": 4726,
+   "spendUSD": 8298347
+  },
+  {
+   "month": "2024-06",
+   "claims": 4768,
+   "spendUSD": 8589789
+  },
+  {
+   "month": "2024-07",
+   "claims": 4562,
+   "spendUSD": 8791902
+  },
+  {
+   "month": "2024-08",
+   "claims": 4682,
+   "spendUSD": 8055422
+  },
+  {
+   "month": "2024-09",
+   "claims": 4731,
+   "spendUSD": 8773584
+  },
+  {
+   "month": "2024-10",
+   "claims": 4876,
+   "spendUSD": 9046111
+  },
+  {
+   "month": "2024-11",
+   "claims": 4809,
+   "spendUSD": 8568953
+  },
+  {
+   "month": "2024-12",
+   "claims": 4680,
+   "spendUSD": 8861190
+  },
+  {
+   "month": "2025-01",
+   "claims": 4691,
+   "spendUSD": 8386019
+  },
+  {
+   "month": "2025-02",
+   "claims": 4711,
+   "spendUSD": 8647512
+  },
+  {
+   "month": "2025-03",
+   "claims": 4707,
+   "spendUSD": 8782180
+  },
+  {
+   "month": "2025-04",
+   "claims": 4867,
+   "spendUSD": 8068715
+  },
+  {
+   "month": "2025-05",
+   "claims": 4795,
+   "spendUSD": 9473056
+  },
+  {
+   "month": "2025-06",
+   "claims": 4732,
+   "spendUSD": 8283579
+  },
+  {
+   "month": "2025-07",
+   "claims": 4755,
+   "spendUSD": 8527449
+  },
+  {
+   "month": "2025-08",
+   "claims": 4770,
+   "spendUSD": 8853622
+  },
+  {
+   "month": "2025-09",
+   "claims": 4710,
+   "spendUSD": 8615211
+  },
+  {
+   "month": "2025-10",
+   "claims": 4697,
+   "spendUSD": 8410998
+  },
+  {
+   "month": "2025-11",
+   "claims": 4783,
+   "spendUSD": 8826079
+  },
+  {
+   "month": "2025-12",
+   "claims": 4707,
+   "spendUSD": 8795999
+  },
+  {
+   "month": "2026-01",
+   "claims": 4717,
+   "spendUSD": 8430933
+  },
+  {
+   "month": "2026-02",
+   "claims": 4782,
+   "spendUSD": 8970942
+  },
+  {
+   "month": "2026-03",
+   "claims": 4747,
+   "spendUSD": 9187966
+  },
+  {
+   "month": "2026-04",
+   "claims": 4686,
+   "spendUSD": 8625928
+  },
+  {
+   "month": "2026-05",
+   "claims": 4802,
+   "spendUSD": 8805991
+  },
+  {
+   "month": "2026-06",
+   "claims": 4631,
+   "spendUSD": 9053773
+  }
+ ],
+ "degreeDist": [
+  {
+   "providers": "1",
+   "members": 5924
+  },
+  {
+   "providers": "2",
+   "members": 6377
+  },
+  {
+   "providers": "3",
+   "members": 3968
+  },
+  {
+   "providers": "4",
+   "members": 2394
+  },
+  {
+   "providers": "5",
+   "members": 1157
+  },
+  {
+   "providers": "6+",
+   "members": 180
+  }
+ ],
+ "graphrag": {
+  "probeProvider": "P00227",
+  "egoNodes": 263,
+  "egoEdges": 523,
+  "graphContextTokens": 6553,
+  "sqlDumpTokens": 20426,
+  "communitySummaryTokens": 350,
+  "sampleTriples": [
+   "(M000070:Member)-[TREATED_BY]->(P00227:Provider)",
+   "(M000070:Member)-[TREATED_BY]->(P00334:Provider)",
+   "(M000070:Member)-[HAS_PHONE]->(RINGPH2_2:Phone)",
+   "(M000219:Member)-[HAS_PHONE]->(RINGPH2_1:Phone)",
+   "(M000070:Member)-[LIVES_AT]->(RINGADDR2_0:Address)",
+   "(M000219:Member)-[LIVES_AT]->(RINGADDR2_1:Address)",
+   "(M000547:Member)-[DIAGNOSED_WITH]->(M54 Low back pain:Diagnosis)",
+   "(M000629:Member)-[DIAGNOSED_WITH]->(G47 Sleep apnea:Diagnosis)"
+  ]
+ },
+ "memory": {
+  "networkxMB": 63.7,
+  "bytesPerElement": 379,
+  "nodesPlusEdges": 167940
+ }
+}

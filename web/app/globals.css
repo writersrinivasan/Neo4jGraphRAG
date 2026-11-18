@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #f7f7fb;
+  --surface: #ffffff;
+  --surface-2: #f1f2f8;
+  --border: #e3e4ee;
+  --text: #14151f;
+  --text-2: #4d5065;
+  --muted: #7d8098;
+  --grid: #e8e9f0;
+  --code-bg: #12131c;
+  --code-text: #e7e8f3;
+  --hero-from: #6d5dfc;
+  --hero-via: #e14fa8;
+  --hero-to: #ff9a3c;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0e0f16;
+    --surface: #171823;
+    --surface-2: #1f2030;
+    --border: #2c2d40;
+    --text: #f0f0f7;
+    --text-2: #c0c2d6;
+    --muted: #8e91aa;
+    --grid: #262738;
+    --code-bg: #0a0b10;
+    --code-text: #e7e8f3;
+    --hero-from: #5848e0;
+    --hero-via: #c23b8f;
+    --hero-to: #e0802a;
+  }
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-line: var(--border);
+  --color-ink: var(--text);
+  --color-ink-2: var(--text-2);
+  --color-muted: var(--muted);
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+body { background: var(--bg); color: var(--text); font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Inter, sans-serif; }
+
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 18px; }
+.hero-grad { background: linear-gradient(120deg, var(--hero-from), var(--hero-via) 55%, var(--hero-to)); }
+.text-grad { background: linear-gradient(90deg, var(--hero-from), var(--hero-via), var(--hero-to)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+pre.code { background: var(--code-bg); color: var(--code-text); border-radius: 14px; padding: 16px 18px; font-size: 13px; line-height: 1.55; overflow-x: auto; }
+input[type="range"] { accent-color: #6d5dfc; width: 100%; }
+
+.recharts-cartesian-grid line { stroke: var(--grid); }
+.recharts-text { fill: var(--muted); font-size: 12px; }
+.recharts-tooltip-wrapper .recharts-default-tooltip { background: var(--surface) !important; border: 1px solid var(--border) !important; border-radius: 10px; color: var(--text); }
+.recharts-legend-item-text { color: var(--text-2) !important; }
+
+/* Grid children default to min-width:auto, so wide <pre>/<table> content would stretch the
+   page past the viewport on phones. Let them shrink and scroll inside their own box instead. */
+.grid > * { min-width: 0; }
+body { overflow-x: clip; }
